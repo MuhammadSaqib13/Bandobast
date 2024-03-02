@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photography" />
+
+            <TextView
+                android:id="@+id/lbl_Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                android:layout_below="@id/lbl_Code"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainHeadText"
+                android:text="Lawn, Banquest Halls, Farmshouse"
+                android:textColor="@color/black"
+                android:maxLines="5"
+                android:drawableLeft="@drawable/ic_outline_location_on_24"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/VendLocation"
+                android:text="Rs. 20000 Onwards"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

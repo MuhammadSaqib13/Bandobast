@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPackage1">
+
+    <LinearLayout
+        android:id="@+id/data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/main_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F5F5">
+
+
+            <LinearLayout
+                android:id="@+id/card_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/banner_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/pkg_img1"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="41dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-275dp"
+                    android:src="@drawable/ic_baseline_arrow_back_white_24" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_card"
+            app:cardCornerRadius="30dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/scrll_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/main_Head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="25dp"
+                        android:gravity="center"
+                        android:text="Rate according to your Requiremrnts"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+
+                        />
+                    <LinearLayout
+                        android:id="@+id/cat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/main_Head"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="0dp"
+                        >
+                        <TextView
+                            android:id="@+id/cat_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "Caterer"
+                            android:layout_marginTop="10dp"
+                            android:textSize = "15sp"
+                            />
+                        <RatingBar
+                            android:id="@+id/cat_ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:scaleX="0.40"
+                            android:scaleY="0.40"
+                            android:rating="2"
+                            android:progressTint="#fbd91b"
+                            android:layout_marginLeft="31dp"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Transport_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/cat_layout"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/trans_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transporter"
+                            android:textSize = "15sp"
+                            />
+                        <RatingBar
+                            android:id="@+id/trp_ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/trans_text"
+                            android:scaleX="0.40"
+                            android:scaleY="0.40"
+                            android:progressTint="#fbd91b"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginLeft="2dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Banquet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/Transport_layout"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/Banq_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Banquet"
+                            android:textSize = "15sp"
+                            />
+                        <RatingBar
+                            android:id="@+id/banq_ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/Banq_text"
+                            android:scaleX="0.40"
+                            android:scaleY="0.40"
+                            android:progressTint="#fbd91b"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginLeft="23.2dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Decor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/Banquet_layout"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/decor_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Decorator"
+                            android:textSize = "15sp"
+                            />
+                        <RatingBar
+                            android:id="@+id/decor_ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/decor_text"
+                            android:progressTint="#fbd91b"
+                            android:scaleX="0.40"
+                            android:scaleY="0.40"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginLeft="13dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/Photo_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/Decor_layout"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/photo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Photographer"
+                            android:textSize = "15sp"
+                            />
+                        <RatingBar
+                            android:id="@+id/photo_ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:scaleX="0.40"
+                            android:progressTint="#fbd91b"
+                            android:scaleY="0.40"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginLeft="-13dp"
+
+                            />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_Next"
+                        android:layout_below="@id/Photo_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#454662"
+                        android:text="Next"
+
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

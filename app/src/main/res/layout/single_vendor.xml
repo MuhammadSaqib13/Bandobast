@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Venue"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+    <TextView
+        android:id="@+id/Venuemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#454662"
+        android:layout_marginTop="20dp"
+        />
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lawn, Banquest Halls, Farmshouse"
+            android:layout_marginLeft="20dp"
+            android:textSize="13sp"
+            android:layout_marginTop="40dp"
+            />
+        <ImageView
+            android:id="@+id/imgHalls"
+            android:layout_width="120dp"
+            android:src="@drawable/photography"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdeasActivity">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:SpinKit_Color="#454662" />
+
+<RelativeLayout
+    android:id="@+id/typeVnd"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mainHead"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDEAS"
+        android:textSize="20dp"
+        android:textColor="#454662"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/search_icon1"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mainHead"
+        android:src="@drawable/ic_baseline_search_24" />
+
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/search_icon1"
+        android:src="@drawable/ic_baseline_favorite_24" />
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeVnd"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_capsule" />
+
+    <TextView
+        android:id="@+id/txtWhereAreWe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catRv"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Here Are Some"
+        android:textColor="#212121"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtGoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWhereAreWe"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="unique ideas!"
+        android:textColor="#757575"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/locationViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/card_Bottom"
+        android:layout_below="@id/txtGoing"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <RelativeLayout
+        android:id="@+id/card_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/transparent"
+        >
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/card_BottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/transparent"
+            >
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottm_AppBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                app:fabCradleMargin="20dp"
+                app:elevation="0dp"
+                app:backgroundTint="#454662"
+                android:layout_marginTop="45dp"
+                app:fabCradleRoundedCornerRadius="15dp"
+                app:fabCradleVerticalOffset="15dp"
+                >
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottm_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    app:itemIconTint="#fff"
+                    app:backgroundTint="@android:color/transparent"
+                    app:itemTextColor="#fff"
+                    app:elevation="0dp"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/navigation_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#454662"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_home_24"
+                app:layout_anchor="@id/bottm_AppBar"
+                app:maxImageSize="30dp"
+                app:tint="#80cc96"
+                />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

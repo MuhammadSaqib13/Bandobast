@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:layout_marginLeft="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#639F9F9F"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/lbl_Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/recycler_Card"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor2"
+                android:layout_width="180dp"
+                android:background="#639F9F9F"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/lbl_Code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor2"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText2"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code2"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText2"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range2"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation2"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card3"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_below="@id/recycler_Card"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor3"
+                android:layout_width="180dp"
+                android:background="#639F9F9F"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/lbl_Code3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor3"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText3"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code3"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText3"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range3"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation3"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/recycler_Card3"
+        android:layout_below="@id/recycler_Card2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor4"
+                android:layout_width="180dp"
+                android:background="#639F9F9F"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/lbl_Code4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor4"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText4"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code4"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText4"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range4"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation4"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/recycler_Card3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor5"
+                android:layout_width="180dp"
+                android:background="#639F9F9F"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/lbl_Code5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor5"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText5"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code5"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation5"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText5"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range5"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation5"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler_Card6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/recycler_Card5"
+        android:layout_below="@id/recycler_Card4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="7dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F6F5F5">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgVendor6"
+                android:layout_width="180dp"
+                android:background="#639F9F9F"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/lbl_Code6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:layout_below="@id/imgVendor6"
+                android:visibility="invisible"
+                android:text="Code"
+                android:textSize="5dp" />
+
+            <TextView
+                android:id="@+id/mainHeadText6"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/lbl_Code6"
+                android:layout_marginTop="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#454662"
+                />
+            <TextView
+                android:id="@+id/VendLocation6"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/mainHeadText6"
+                android:maxLines="5"
+                android:layout_marginTop="3dp"
+                android:background="#639F9F9F"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/vend_amnt_range6"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#454662"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="#639F9F9F"
+                android:layout_below="@id/VendLocation6"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

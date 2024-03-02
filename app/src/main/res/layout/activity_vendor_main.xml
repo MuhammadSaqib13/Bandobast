@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vendor_Main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_nav1">
+<!--        android:padding="15dp"-->
+
+
+       <include layout="@layout/topbar"/>
+<!--        <TextView-->
+<!--            android:id="@+id/mainHead"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="VENDOR CATEGORY"-->
+<!--            android:textSize="25dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:textColor="#454662"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:showDividers="middle"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/chat_icon1"-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_gravity="center"-->
+
+<!--                android:src="@drawable/ic_baseline_chat_24" />-->
+
+<!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/VendorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_nav1"
+        android:paddingBottom="80dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <RelativeLayout
+        android:id="@+id/card_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#F6F5F5"
+        >
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/card_BottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/transparent"
+            >
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottm_AppBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                app:fabCradleMargin="20dp"
+                app:elevation="0dp"
+                app:backgroundTint="#454662"
+                android:layout_marginTop="45dp"
+                app:fabCradleRoundedCornerRadius="15dp"
+                app:fabCradleVerticalOffset="15dp"
+                >
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottm_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    app:itemIconTint="#fff"
+                    app:backgroundTint="@android:color/transparent"
+                    app:itemTextColor="#fff"
+                    app:elevation="0dp"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/navigation_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#454662"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_baseline_home_24"
+                app:layout_anchor="@id/bottm_AppBar"
+                app:maxImageSize="30dp"
+                app:tint="#80cc96"
+                />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
